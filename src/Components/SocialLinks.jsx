@@ -12,7 +12,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com/in/",
+      href: "https://linkedin.com/in/abilash-raman",
       style: "rounded-tr-md",
     },
     {

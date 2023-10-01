@@ -3,12 +3,11 @@ import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
-import next from "../assets/nextjs.png";
-import node from "../assets/node.png";
-import graphql from "../assets/graphql.png";
+import bootstrap from '../assets/bootstrap.png'
+import git from "../assets/git.png";
 import github from "../assets/github.png";
 
-const Experience = () => {
+const Skill = () => {
 
   const techs = [
     {
@@ -31,49 +30,43 @@ const Experience = () => {
     },
     {
       id: 4,
+      src: bootstrap,
+      title: 'Bootstrap',
+      style: 'shadow-violet-500 pt-6'
+    },
+    {
+      id: 5,
       src: javascript,
       title: 'JavaScript',
       style: 'shadow-yellow-500'
     },
     {
-      id: 5,
+      id: 6,
       src: reactImage,
       title: 'React JS',
-      style: 'shadow-blue-600'
-    },
-    {
-      id: 6,
-      src: next,
-      title: 'Next JS',
-      style: 'shadow-white'
+      style: 'shadow-blue-400'
     },
     {
       id: 7,
-      src: node,
-      title: 'Node',
-      style: 'shadow-lime-500'
+      src: git,
+      title: 'Git',
+      style: 'shadow-red-500'
     },
     {
       id: 8,
-      src: graphql,
-      title: 'GraphQL',
-      style: 'shadow-pink-400'
-    },
-    {
-      id: 9,
       src: github,
       title: 'GitHub',
       style: 'shadow-gray-400'
-    },
+    }
   ]
 
   return (
-    <section name="experience" className="bg-gradient-to-b from-gray-800 to-black w-full h-screen">
+    <section name="skills" className="bg-gradient-to-b from-gray-800 to-black w-full h-full">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
 
         <div>
-          <p className="text-4xl border-b-4 font-bold border-gray-500 p-2 inline">Experience</p>
-          <p className="py-6">These are the technologies I've worked with.</p>
+          <p className="text-4xl border-b-4 font-bold border-gray-500 p-1 inline">Tech Skills</p>
+          <p className="py-6">Some of the technologies I've learned and worked with.</p>
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
@@ -93,4 +86,4 @@ const Experience = () => {
   )
 }
 
-export default Experience
+export default Skill;
